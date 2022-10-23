@@ -1,1 +1,1 @@
-# [pet_project] (https://danyazavarin.github.io/daily_quotes/)
+[pet_project](https://danyazavarin.github.io/daily_quotes/)
