@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="quotes.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Website with quotes</title>
     </head>
@@ -8,10 +8,10 @@
     <header>
         <a href="#" class="logo">Quote book</a>
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Other</a></li>
+            <li><a href="#" class="btn active">Home</a></li>
+            <li><a href="#" class="btn">About</a></li>
+            <li><a href="#" class="btn">Contact</a></li>
+            <li><a href="#" class="btn">Other</a></li>
         </ul>
     </header>
     <section>
@@ -28,5 +28,16 @@
             "Success is walking from failure to failure with no loss of enthusiasm."<span>Winston Churchill</span>
         </p>
     </section>
+    
+    <script>
+        var btns = document.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("btn active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+        }
+    </script>
 </body>
 </html>
