@@ -32,7 +32,7 @@ header {
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
-    
+    text-shadow: 2px 2px 10px 1px;
 }
 
 .navigation {
@@ -44,6 +44,7 @@ header {
 
 .navigation li {
     list-style: none;
+    cursor: pointer;
 }
 .navigation li a {
     text-decoration: none;
@@ -86,6 +87,8 @@ h2 {
 
 .text:hover {
     opacity: 1;
+    margin: 30px 140px 20px 140px;
+    font-size: 21px;
 }
 
 .text span {
